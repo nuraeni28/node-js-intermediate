@@ -4,7 +4,7 @@ const getAllMahasiswa = async (req, res) => {
     try {
         const [data] = await MahasiswaModel.getMahasiswa();
     
-        res.status(200).send({status:200, message :"Get Mahasiswa success", data :data });
+        res.status(200).json({status:200, message :"Get Mahasiswa success", data :data });
 
     } catch (error) {
         res.status(500).json({
@@ -17,9 +17,9 @@ const getAllMahasiswa = async (req, res) => {
 const createNewMahasiswa = async (req, res) => {
     const {body} = req;
 
-    if(!body.nim||!body.name||!body.address||!body.hobby){
+    if(!body.nim||!body.name||!body.address||!body.hobby||!body.prodi||!body.jurusan){
         return res.status(400).json({
-            message: 'Tidak boleh Kosong',
+            message: 'Data harus Lengkap',
             data: null,
         })
     }

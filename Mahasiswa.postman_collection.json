@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "cafa2ca2-8efa-4259-8eda-e2e340e47620",
+		"name": "Mahasiswa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/mahasiswa",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mahasiswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nim",
+							"value": "345234",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Tupi",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "Makssar",
+							"type": "default"
+						},
+						{
+							"key": "hobby",
+							"value": "nonton",
+							"type": "default"
+						},
+						{
+							"key": "prodi",
+							"value": "TKJ",
+							"type": "default"
+						},
+						{
+							"key": "jurusan",
+							"value": "elektro",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/mahasiswa",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mahasiswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nim",
+							"value": "34566",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "taufik2",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "masolog",
+							"type": "default"
+						},
+						{
+							"key": "hobby",
+							"value": "asd",
+							"type": "default"
+						},
+						{
+							"key": "prodi",
+							"value": "TMJ",
+							"type": "default"
+						},
+						{
+							"key": "jurusan",
+							"value": "elektro",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/mahasiswa/4",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mahasiswa",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy 3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nim",
+							"value": "34566",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "taufik23456",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "masolog",
+							"type": "default"
+						},
+						{
+							"key": "hobby",
+							"value": "asd",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/mahasiswa/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"mahasiswa",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
